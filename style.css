@@ -1,1 +1,333 @@
+/* RESET */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#F5F1E8;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(45%);
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.82)
+    );
+
+    z-index:1;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:35px 7%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
+
+    transition:0.4s ease;
+}
+
+/* STICKY */
+
+header.sticky{
+    background:rgba(5,5,5,0.92);
+
+    backdrop-filter:blur(12px);
+
+    padding:24px 7%;
+}
+
+.logo{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    letter-spacing:8px;
+}
+
+nav{
+    display:flex;
+    gap:45px;
+}
+
+nav a{
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    font-size:0.75rem;
+
+    letter-spacing:3px;
+
+    transition:0.4s ease;
+}
+
+nav a:hover{
+    color:#C9A97D;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:absolute;
+
+    z-index:5;
+
+    left:7%;
+    bottom:14%;
+
+    max-width:760px;
+}
+
+.hero-content p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.78rem;
+
+    margin-bottom:30px;
+}
+
+.hero-content h1{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:6.5rem;
+    font-weight:300;
+
+    line-height:0.92;
+
+    margin-bottom:35px;
+}
+
+.hero-content span{
+    display:block;
+
+    max-width:600px;
+
+    color:#BEBEBE;
+
+    line-height:2;
+
+    margin-bottom:50px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.hero-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:18px 42px;
+
+    text-decoration:none;
+
+    color:#F5F1E8;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    letter-spacing:3px;
+
+    font-size:0.74rem;
+
+    transition:0.45s ease;
+}
+
+.hero-btn:hover{
+    background:#F5F1E8;
+    color:#050505;
+}
+
+.secondary-btn{
+    background:
+    rgba(255,255,255,0.03);
+}
+
+/* EXPERIENCE */
+
+.experience{
+    padding:180px 7%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:120px;
+}
+
+.experience-left p{
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:30px;
+}
+
+.experience-left h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4rem;
+    font-weight:300;
+
+    line-height:1.05;
+}
+
+.experience-right{
+    display:flex;
+    align-items:flex-end;
+}
+
+.experience-right p{
+    color:#AFAFAF;
+
+    line-height:2.1;
+
+    max-width:550px;
+}
+
+/* FLEET */
+
+.fleet{
+    padding:0 7% 180px;
+}
+
+.fleet-title{
+    margin-bottom:70px;
+}
+
+.fleet-title p{
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.fleet-title h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4rem;
+    font-weight:300;
+}
+
+.fleet-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+/* FLEET CARD */
+
+.fleet-card{
+    position:relative;
+
+    overflow:hidden;
+
+    height:720px;
+}
+
+.fleet-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1.2s ease;
+}
+
+.fleet-card:hover img{
+    transform:scale(1.06);
+}
+
+.fleet-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.88),
+        rgba(0,0,0,0.08)
+    );
+}
+
+.fleet-info{
+    position:absolute;
+
+    left:40px;
+    bottom:45px;
+
+    z-index:5;
+}
+
+.fleet-info span{
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.7rem;
+}
+
+.fleet-info h3{
+    margin-top:12px;
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2.8rem;
+    font-weight:300;
+}
