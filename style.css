@@ -770,6 +770,7 @@ nav a:hover{
     .interior,
     .mobile-experience{
         grid-template-columns:1fr;
+        gap:120px;
     }
 
     .fleet-grid{
@@ -854,3 +855,11 @@ nav a:hover{
 
     }
 
+@media(max-width:768px){
+
+    .interior,
+    .mobile-experience{
+        gap:70px;
+    }
+
+}
