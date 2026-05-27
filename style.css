@@ -350,13 +350,6 @@ nav a:hover{
     overflow:hidden;
 }
 
-.interior-image img{
-    width:100%;
-    height:850px;
-
-    object-fit:cover;
-}
-
 .interior-content p{
     color:#C9A97D;
 
@@ -436,12 +429,14 @@ nav a:hover{
     overflow:hidden;
 }
 
+.interior-image img,
 .mobile-right img{
     width:100%;
     height:850px;
 
     object-fit:cover;
-        }
+    object-position:center;
+}
 
 /* CONTACT */
 
@@ -840,9 +835,12 @@ nav a:hover{
 
     .interior-image img,
     .mobile-right img{
-        height:600px;
-        will-change:transform;
-    }
+    height:auto;
+    min-height:420px;
+
+    object-fit:contain;
+    background:#050505;
+}
 
     .contact-content h2,
     .footer-content h2{
