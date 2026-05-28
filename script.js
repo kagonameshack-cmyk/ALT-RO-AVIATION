@@ -13,27 +13,6 @@ window.addEventListener(
 
 });
 
-/* MOBILE MENU */
-
-const toggle =
-document.getElementById(
-"menu-toggle"
-);
-
-const mobileMenu =
-document.getElementById(
-"mobile-menu"
-);
-
-toggle.addEventListener(
-"click",()=>{
-
-    mobileMenu.classList.toggle(
-    "active"
-    );
-
-});
-
 /* REVEAL */
 
 const reveals =
@@ -82,6 +61,42 @@ window.addEventListener(
 
         img.style.transform =
         `translateY(${scroll * 0.12}px)`;
+
+    });
+
+});
+
+const toggle =
+document.getElementById(
+"menu-toggle"
+);
+
+const mobileMenu =
+document.getElementById(
+"mobile-menu"
+);
+
+toggle.addEventListener(
+"click",()=>{
+
+    mobileMenu.classList.toggle(
+    "active"
+    );
+
+});
+
+/* CLOSE MENU WHEN LINK CLICKED */
+
+document.querySelectorAll(
+".mobile-menu a"
+).forEach(link => {
+
+    link.addEventListener(
+    "click",()=>{
+
+        mobileMenu.classList.remove(
+        "active"
+        );
 
     });
 
