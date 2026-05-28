@@ -783,10 +783,18 @@ nav a:hover{
     transition:0.6s ease;
 
     overflow:hidden;
+
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
 }
 
 .mobile-menu.active{
     right:0;
+
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
 }
 
 .mobile-menu a{
