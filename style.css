@@ -338,12 +338,10 @@ nav a:hover{
 .interior{
     padding:0 7% 180px;
 
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
+    display:flex;
+    flex-direction:column;
 
-    gap:90px;
-
-    align-items:center;
+    gap:60px;
 }
 
 .interior-image{
@@ -391,12 +389,10 @@ nav a:hover{
 .mobile-experience{
     padding:0 7% 180px;
 
-    display:grid;
-    grid-template-columns:0.95fr 1.05fr;
+    display:flex;
+    flex-direction:column;
 
-    gap:90px;
-
-    align-items:center;
+    gap:60px;
 }
 
 .mobile-left p{
@@ -440,10 +436,12 @@ nav a:hover{
 .interior-image img,
 .mobile-right img{
     width:100%;
-    height:850px;
+    height:700px;
 
     object-fit:cover;
     object-position:center;
+
+    display:block;
 }
 
 /* CONTACT */
