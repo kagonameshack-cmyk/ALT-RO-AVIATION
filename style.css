@@ -842,26 +842,24 @@ nav a:hover{
         height:520px;
     }
 
-    .interior-image img,
-.mobile-right img{
-    width:100%;
-    height:auto;
-
-    max-height:650px;
-
-    object-fit:contain;
-    object-position:center;
-
-    display:block;
-
-    margin:auto;
-
-    background:#050505;
-    }
-
     .interior-image,
     .mobile-right{
-    background:#050505;
+        width:100%;
+        overflow:hidden;
+        border-radius:0;
+    }
+
+    .interior-image img,
+    .mobile-right img{
+        width:100%;
+        height:420px;
+
+        object-fit:cover;
+        object-position:center;
+
+        display:block;
+    }
+
     }
 
     .contact-content h2,
