@@ -348,6 +348,10 @@ nav a:hover{
 
 .interior-image{
     overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .interior-content p{
@@ -427,7 +431,11 @@ nav a:hover{
 
 .mobile-right{
     overflow:hidden;
-}
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    }
 
 .interior-image img,
 .mobile-right img{
@@ -835,13 +843,26 @@ nav a:hover{
     }
 
     .interior-image img,
-    .mobile-right img{
+.mobile-right img{
+    width:100%;
     height:auto;
-    min-height:420px;
+
+    max-height:650px;
 
     object-fit:contain;
+    object-position:center;
+
+    display:block;
+
+    margin:auto;
+
     background:#050505;
-}
+    }
+
+    .interior-image,
+    .mobile-right{
+    background:#050505;
+    }
 
     .contact-content h2,
     .footer-content h2{
