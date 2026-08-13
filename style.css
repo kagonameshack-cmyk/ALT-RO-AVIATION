@@ -34,7 +34,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(45%);
+    filter: brightness(65%);
     will-change: transform;
 }
 
@@ -45,13 +45,12 @@ body{
     background:
         linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.30),
-            rgba(0, 0, 0, 0.82)
+            rgba(0,0,0,0.18),
+            rgba(0,0,0,0.62)
         );
 
     z-index: 1;
 }
-
 
 /* HEADER */
 
